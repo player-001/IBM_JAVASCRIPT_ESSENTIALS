@@ -1,4 +1,4 @@
-// Global scope
+// Global scope, accessible throughout the entire script
 var globalVar = "I'm a global variable";
 let globalLet = "I'm also global, but scoped with let";
 const globalConst = "I'm a global constant";
@@ -29,3 +29,18 @@ show()
 //console.log(functionVar)   //won't work as var is function bound
 //console.log(functionlet)   //won't work as let is block bound
 //console.log(functionConst) //won't work as const is block bound
+
+{
+    let a = 1
+    var b = 2
+    const c = 3
+
+    a = 4
+    b = 5
+    //c = 6   //constants cannot be reassigned on the same block
+}
+
+a = 6
+b = 8
+c = 9
+
