@@ -15,32 +15,33 @@ console.log(globalVar)
 console.log(globalLet)
 console.log(globalConst)
 
-//console.log(blockVar) //won't work
-//console.log(blockLet)  //won't work
+console.log(blockVar)
+//console.log(blockLet) //won't work as let is block-scoped
 
 
 function show(){
-    var functionVar = "i am a function-scoped var"
-    let functionLet = "i am a block-scoped let"
+    var functionVar = "I am a function-scoped var"
+    let functionLet = "I am a block-scoped let"
     const functionConst = "i am a block-scoped const"
 }
-
 show()
-//console.log(functionVar)   //won't work as var is function bound
-//console.log(functionlet)   //won't work as let is block bound
-//console.log(functionConst) //won't work as const is block bound
+
+//console.log(functionVar)   //won't work as var is function-scoped
+//console.log(functionLet)   //won't work as let is block-scoped
+//console.log(functionConst)  //won't work as const is block-scoped
 
 {
-    let a = 1
-    var b = 2
-    const c = 3
+    var a = 5
+    let b = 6
+    const c = 7
 
-    a = 4
-    b = 5
-    //c = 6   //constants cannot be reassigned on the same block
+    a = 8
+    b = 9
+    //c = 10 constants cannot be reassigned
+
 }
 
-a = 6
-b = 8
-c = 9
+a = 11
+b = 12
+c = 13
 
