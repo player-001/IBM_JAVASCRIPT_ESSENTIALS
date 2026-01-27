@@ -5,7 +5,7 @@
 
     <script>
         function counter(){
-            var count = 0
+            var count = 0       //encapsulation of data within a private environment or scope
             function inc(){    //here the inc function has full access to count, so the counter function acts as a global scope for the inner function, without cluttering the actual global scope , and making sure that only the inner function can modify the variables in the outer function making them protected from outside
                 count ++
                 return count
