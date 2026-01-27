@@ -1,0 +1,14 @@
+<html>
+    <head> function hoisting </head>
+    <script>
+        Hello()                         //functions can be called before definition
+        //greet()                       //won't work
+        function Hello(){               //functions assigned to variables won't work
+            console.log("hello world!") 
+        }
+
+        const greet = function (){
+            console.log("Hello everyone !")
+        }
+    </script>
+</html>

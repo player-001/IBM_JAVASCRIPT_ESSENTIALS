@@ -5,7 +5,7 @@ const globalConst = "I'm a global constant";
 
 
 {
-// Block scope
+// Block scope  between curly brackets is a block
 var blockVar = "I'm a block-scoped var";
 let blockLet = "I'm a block-scoped let";   //let is block bound, so beyond the block it is unaccessible
 const blockConst = "I'm a block-scoped const"; //same for const
