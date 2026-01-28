@@ -1,6 +1,6 @@
-const breakfastMenu = ["Pancakes", "Eggs Benedect", "Oatmeal"]
-const mainCourseMenu = ["Steak", "Pasta", "Burger"]
-const dessertMenu = ["Cake", "Ice Cream", "Pudding"]
+const breakfastMenu = ["Pancakes- $12", "Eggs Benedect- $22.99", "Oatmeal- $21.99", "Frittata- $15"]
+const mainCourseMenu = ["Steak- $10", "Pasta- $6", "Burger- $4", "Salmon- $12"]
+const dessertMenu = ["Cake- $20", "Ice Cream- $15", "Pudding- $8", "Fruit Salad- $23"]
 
 const breakfastMenuItemsHTML = breakfastMenu.map((item, index) => {   //one way to update the array elements and reassign to the array
     return `<p>Item ${index + 1}: ${item}</p>`
