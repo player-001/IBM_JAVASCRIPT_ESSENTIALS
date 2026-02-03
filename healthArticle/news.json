@@ -1,0 +1,12 @@
+{
+    "news": [
+        {
+            "head": "Good News",
+            "body": "Nothing"
+        },
+        {
+            "head": "news2",
+            "body": "body2"
+        }
+    ]
+}
