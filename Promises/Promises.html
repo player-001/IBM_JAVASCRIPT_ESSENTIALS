@@ -1,22 +1,22 @@
 <html>
     <script>
         function add(a, b){
-            return Promise((resolve) => {
-                c = a + b
-                return resolve(c)
-            })
+            return new Promise((resolve) => {   //function returns promise
+                c = a + b                  //async operation
+                return resolve(c)        //when the above operation is successful promise returns a resolve with the desired return of original function
+            })                //promises help asynchronous functions happen one after the other
         }
 
         function printAns(ans){
-            return Promise((resolve)=>{
+            return new Promise((resolve)=>{
                 console.log(ans)
                 return resolve(ans)
             })
         }
 
-        add(5, 2).then((ans)=> {
+        add(5, 2).then((ans)=> {       //.then is triggered only when the promise is completed, the promise could return an error also if triggered
             printAns(ans).then((ans) => {
-                
+
             })
         })
     </script>
